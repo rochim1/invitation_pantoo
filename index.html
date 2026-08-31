@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Undangan pernikahan Dila dan Rochim">
+  <title>Dila & Rochim — Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="locked">
+  <aside class="desktop-cover" aria-hidden="true">
+    <div class="grain"></div>
+    <div class="cover-copy">
+      <p class="eyebrow">THE WEDDING OF</p>
+      <h1>Dila <span>&</span> Rochim</h1>
+      <p class="date">19 DESEMBER 2026</p>
+    </div>
+  </aside>
+
+  <main class="invitation" id="invitation">
+    <section class="opening" id="opening">
+      <div class="opening-inner">
+        <p class="eyebrow">WEDDING INVITATION</p>
+        <h2>Dila <span>&</span> Rochim</h2>
+        <div class="guest">
+          <p>Kepada Yth.</p>
+          <strong id="guest-name">Tamu Undangan</strong>
+        </div>
+        <button class="pill" id="open-invitation" type="button">✦ BUKA UNDANGAN</button>
+      </div>
+    </section>
+
+    <div class="content" id="content" aria-hidden="true">
+      <section class="hero section hero-motion">
+        <div class="arch arch-photo photo-one" role="img" aria-label="Video pembuka pernikahan">
+          <video autoplay muted loop playsinline poster="assets/reference/JAWA-03-FALLBACK.jpg">
+            <source src="assets/reference/3D-Motion-Jawa-03.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="hero-copy">
+          <p class="eyebrow">THE WEDDING OF</p>
+          <h2>Dila <span>&</span> Rochim</h2>
+          <p class="date">19 DESEMBER 2026</p>
+          <p class="intro">Dengan penuh rasa syukur, kami mengundang Anda untuk hadir dan menjadi bagian dari hari bahagia kami.</p>
+        </div>
+      </section>
+
+      <section class="couple section warm">
+        <p class="script">Bride & Groom</p>
+        <article>
+          <div class="portrait portrait-woman" aria-hidden="true"></div>
+          <p class="role">THE BRIDE</p>
+          <h3>Dila</h3>
+          <p>Dila</p>
+        </article>
+        <div class="ampersand">&</div>
+        <article>
+          <div class="portrait portrait-man" aria-hidden="true"></div>
+          <p class="role">THE GROOM</p>
+          <h3>Rochim</h3>
+          <p>Rochim</p>
+        </article>
+      </section>
+
+      <section class="quote section">
+        <img class="section-divider" src="assets/reference/aset-divider-tema-jawa-03.png" alt="" aria-hidden="true">
+        <div class="line-ornament">✦</div>
+        <p>“Dan di antara tanda-tanda kebesaran-Nya ialah Dia menciptakan pasangan-pasangan untukmu agar kamu merasa tenteram kepadanya.”</p>
+        <span>QS. Ar-Rum: 21</span>
+      </section>
+
+      <section class="event section warm">
+        <img class="section-divider" src="assets/reference/aset-divider-tema-jawa-03.png" alt="" aria-hidden="true">
+        <p class="script">Wedding Event</p>
+        <h3>Save The Date</h3>
+        <div class="countdown" id="countdown">
+          <div><b id="days">00</b><span>Hari</span></div>
+          <div><b id="hours">00</b><span>Jam</span></div>
+          <div><b id="minutes">00</b><span>Menit</span></div>
+          <div><b id="seconds">00</b><span>Detik</span></div>
+        </div>
+        <div class="event-card">
+          <p class="role">AKAD NIKAH & RESEPSI</p>
+          <h4>Sabtu, 19 Desember 2026</h4>
+          <p>Akad Nikah · 07.00 WIB</p>
+          <p>Resepsi · 09.00 WIB</p>
+          <hr>
+          <p>Masjid Suciati Saliman</p>
+          <a class="pill outline" href="https://www.google.com/maps/search/?api=1&amp;query=Masjid+Suciati+Saliman" target="_blank" rel="noreferrer">LIHAT LOKASI</a>
+        </div>
+      </section>
+
+      <section class="gallery section">
+        <img class="section-divider" src="assets/reference/kembar-mayang-coklat.png" alt="" aria-hidden="true">
+        <p class="script">Our Moments</p>
+        <h3>Love Gallery</h3>
+        <div class="gallery-grid">
+          <div class="gallery-item g1"></div><div class="gallery-item g2"></div>
+          <div class="gallery-item g3"></div><div class="gallery-item g4"></div>
+        </div>
+      </section>
+
+      <section class="rsvp section warm">
+        <img class="section-divider" src="assets/reference/aset-divider-tema-jawa-03.png" alt="" aria-hidden="true">
+        <p class="script">Best Wishes</p>
+        <h3>Ucapan & Doa</h3>
+        <form id="wish-form">
+          <label>Nama<input id="name" type="text" required placeholder="Nama Anda"></label>
+          <label>Konfirmasi Kehadiran<select id="attendance"><option>Hadir</option><option>Tidak dapat hadir</option></select></label>
+          <label>Ucapan<textarea id="message" required rows="4" placeholder="Tulis ucapan terbaik..."></textarea></label>
+          <button class="pill" type="submit">KIRIM UCAPAN</button>
+        </form>
+        <div id="wishes" class="wishes" aria-live="polite"></div>
+      </section>
+
+      <footer>
+        <p>Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Anda berkenan hadir.</p>
+        <h3>Dila <span>&</span> Rochim</h3>
+        <small>Made with love · 2026</small>
+      </footer>
+    </div>
+  </main>
+
+  <button class="music" id="music" type="button" aria-label="Putar musik">♫</button>
+  <audio id="song" src="assets/reference/Kasetyan-Jati-mp3cut.net_.mp3" preload="auto" loop></audio>
+  <script src="script.js"></script>
+</body>
+</html>
