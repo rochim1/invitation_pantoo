@@ -49,3 +49,71 @@ footer{background:linear-gradient(rgba(68,40,23,.52),rgba(68,40,23,.7)),url("ass
 @media(max-width:900px){.hero-motion .hero-copy{top:58%;bottom:auto;padding:0 28px}}
 .opening{display:block;background:url("assets/reference/backgorund-desktop-jawa-03.png") center center/cover no-repeat}.opening-inner{position:absolute;z-index:1;top:22%;left:24px;right:24px}.opening .eyebrow{font-family:var(--serif);font-size:15px;letter-spacing:.08em;margin:0}.opening h2{font-size:56px;line-height:.95;margin:12px 0;color:#542b19}.opening .guest{margin:88px 0 18px}.opening .guest p{font-size:14px;font-weight:600;letter-spacing:.08em}.opening .guest strong{font-size:15px}.opening .pill{padding:11px 23px;background:#8a512a;font-size:11px;box-shadow:0 3px 8px rgba(63,35,19,.12)}
 @media(max-width:520px){.opening-inner{top:22%}.opening h2{font-size:48px}.opening .guest{margin-top:82px}}
+
+/* Olive green theme inspired by the supplied reference. */
+:root{--ivory:#fbf8ef;--cream:#eef0df;--brown:#4f5832;--gold:#a98651;--ink:#4d5534;--white:#fff}
+body{background:#c9cbbd;color:var(--ink)}
+.desktop-cover{background-color:#7d845a;background-blend-mode:soft-light,normal}
+.desktop-cover:after{background:rgba(25,31,15,.66)}
+.cover-copy,.opening-inner,.hero-copy{color:#4f5832}.cover-copy h1,.opening h2,.hero h2{color:#4f5832}
+.opening{background-color:#a7ad81;background-blend-mode:soft-light}.opening .pill,.pill{background:#777f4f;color:#fff}.opening .pill{background:#777f4f;box-shadow:0 4px 12px rgba(58,67,35,.2)}.pill:hover{background:#687044}
+.music{color:#667044;background:#fffdf5;box-shadow:0 5px 16px rgba(45,55,27,.25)}
+.hero{background-color:#eef0df;background-blend-mode:screen}.hero-motion{background:#e8ead8}
+.couple.warm{background-color:#dce0c7;background-blend-mode:soft-light}.couple:before,.couple:after{filter:hue-rotate(42deg) saturate(.75)}
+.quote{background:linear-gradient(rgba(46,57,28,.58),rgba(46,57,28,.7)),url("assets/reference/background-ayat-jawa-03-min.png") center/cover no-repeat;color:#fffdf4}
+.event.warm{background:linear-gradient(rgba(226,231,204,.66),rgba(226,231,204,.78)),url("assets/reference/background-acara-jawa-03.jpg") center top/cover no-repeat}
+.event-card{background:rgba(255,255,246,.7);border-color:rgba(79,88,50,.24);box-shadow:0 10px 28px rgba(55,66,32,.08)}.event-card hr{border-color:rgba(79,88,50,.22)}
+.gallery{background:linear-gradient(rgba(241,243,224,.68),rgba(241,243,224,.78)),url("assets/reference/background-wedding-gift-jawa-03-1.png") center/cover no-repeat}.gallery-item{filter:saturate(.78) hue-rotate(20deg)}
+.rsvp.warm{background:linear-gradient(rgba(225,230,202,.72),rgba(225,230,202,.82)),url("assets/reference/background-wishes-jawa-03-1.png") center/cover no-repeat}
+input,select,textarea{background:#fffdf5;border-color:rgba(79,88,50,.3);color:#4d5534}input:focus,select:focus,textarea:focus{border-color:#777f4f}.wish{background:rgba(255,255,246,.72);border-left-color:#777f4f}
+.countdown div{border-color:rgba(79,88,50,.34);background:rgba(255,255,246,.35)}
+.line-ornament:before,.line-ornament:after{background:#9aa06e}
+footer{background:linear-gradient(rgba(42,52,25,.62),rgba(42,52,25,.8)),url("assets/reference/background-closing-jawa-03.jpg") center bottom/cover no-repeat;color:#fffdf4}
+
+/* Refined palette: warm ivory base with restrained olive accents. */
+:root{--ivory:#faf7ef;--cream:#f1ede3;--brown:#6f7455;--gold:#ae9367;--ink:#505143;--white:#fff}
+body{background:#d5d2c9;color:#505143}
+.desktop-cover{background-color:transparent;background-blend-mode:normal}.desktop-cover:after{background:rgba(28,31,21,.54)}
+.cover-copy,.opening-inner,.hero-copy{color:#505143}.cover-copy h1,.opening h2,.hero h2,.couple h3,.event h3,.gallery h3,.rsvp h3,footer h3{color:#555944}
+.opening{background-color:transparent;background-blend-mode:normal}.opening .pill,.pill{background:#777b59;color:#fff}.opening .pill{background:#777b59;box-shadow:0 4px 12px rgba(54,57,40,.16)}.pill:hover{background:#696e4f}
+.music{color:#6e7353;background:#fffdf7;box-shadow:0 5px 16px rgba(54,57,40,.18)}
+.hero{background-color:transparent;background-blend-mode:normal}.hero-motion{background:#f1ede3}
+.couple.warm{background:linear-gradient(rgba(247,244,235,.48),rgba(242,240,229,.56)),url("assets/reference/backgorund-mempelai-min.png") center top/cover no-repeat}.couple:before,.couple:after{filter:hue-rotate(30deg) saturate(.62)}
+.portrait{filter:saturate(.62) sepia(.08) hue-rotate(18deg)}
+.quote{background:linear-gradient(rgba(62,68,46,.46),rgba(62,68,46,.58)),url("assets/reference/background-ayat-jawa-03-min.png") center/cover no-repeat;color:#fffdf7}
+.event.warm{background:linear-gradient(rgba(248,246,238,.55),rgba(242,242,231,.64)),url("assets/reference/background-acara-jawa-03.jpg") center top/cover no-repeat}
+.event-card{background:rgba(255,253,247,.78);border-color:rgba(103,109,77,.2);box-shadow:0 10px 28px rgba(66,70,48,.06)}.event-card hr{border-color:rgba(103,109,77,.2)}
+.gallery{background:linear-gradient(rgba(249,247,239,.58),rgba(244,243,232,.66)),url("assets/reference/background-wedding-gift-jawa-03-1.png") center/cover no-repeat}.gallery-item{filter:saturate(.72) hue-rotate(8deg)}
+.rsvp.warm{background:linear-gradient(rgba(249,247,239,.62),rgba(241,241,229,.7)),url("assets/reference/background-wishes-jawa-03-1.png") center/cover no-repeat}
+input,select,textarea{background:#fffdf8;border-color:rgba(103,109,77,.24);color:#505143}input:focus,select:focus,textarea:focus{border-color:#777b59}.wish{background:rgba(255,253,247,.76);border-left-color:#777b59}
+.countdown div{border-color:rgba(103,109,77,.26);background:rgba(255,253,247,.42)}
+.line-ornament:before,.line-ornament:after{background:#aaa27d}.section-divider{filter:saturate(.55) hue-rotate(18deg)}
+footer{background:linear-gradient(rgba(55,61,41,.5),rgba(55,61,41,.68)),url("assets/reference/background-closing-jawa-03.jpg") center bottom/cover no-repeat;color:#fffdf7}
+
+/* Stronger accessible contrast on textured backgrounds. */
+:root{--brown:#505936;--gold:#987a48;--ink:#35392d}
+body{color:#35392d}
+.cover-copy,.opening-inner,.hero-copy{color:#35392d;text-shadow:0 1px 2px rgba(255,253,245,.72)}
+.cover-copy h1,.opening h2,.hero h2,.couple h3,.event h3,.gallery h3,.rsvp h3{color:#343a28;text-shadow:0 1px 2px rgba(255,253,245,.62)}
+.eyebrow,.date,.role{color:#505936;font-weight:600}
+.opening .guest p,.opening .guest strong{color:#35392d;text-shadow:0 1px 3px rgba(255,253,245,.9)}
+.pill,.opening .pill{background:#59613b;color:#fff;font-weight:700;box-shadow:0 5px 14px rgba(42,47,28,.24)}.pill:hover,.opening .pill:hover{background:#454d2f;filter:none}.pill:focus-visible{outline:3px solid rgba(89,97,59,.34);outline-offset:3px}
+.event-card{color:#34382c}.event-card .role{color:#4b5335}.event-card h4{color:#343a28;font-weight:600}
+.countdown b{color:#343a28;font-weight:600}.countdown span{color:#4b513b;font-weight:600}
+label{color:#34382c;font-weight:600}input,select,textarea{color:#292d24;border-color:rgba(70,77,47,.42)}input::placeholder,textarea::placeholder{color:#707363;opacity:1}
+.wish{color:#34382c}.wish b{color:#434b30}
+.quote .role,.quote span,footer .eyebrow{color:#f4f1e7}.quote p,footer p,footer h3,footer small{color:#fff;text-shadow:0 1px 3px rgba(20,24,14,.45)}
+.music{color:#4e5735;border:1px solid rgba(74,82,48,.22)}
+
+@media(min-width:901px){.desktop-cover{background-position:center 58%}}
+@media(min-width:901px){.desktop-cover .cover-copy,.desktop-cover .cover-copy h1,.desktop-cover .cover-copy .eyebrow,.desktop-cover .cover-copy .date{color:#fff;text-shadow:0 2px 7px rgba(20,22,14,.58)}}
+.pill,.opening .pill{background:#6f983b;color:#fff;box-shadow:0 5px 14px rgba(54,83,29,.28)}.pill:hover,.opening .pill:hover{background:#587d2f}.pill:focus-visible{outline-color:rgba(111,152,59,.42)}
+.opening .guest p,.opening .guest strong{color:#fff;text-shadow:0 2px 4px rgba(34,38,24,.72)}
+.event.warm{background:linear-gradient(rgba(239,239,223,.28),rgba(229,232,208,.4)),url("assets/reference/background-acara-jawa-03.jpg") center top/cover no-repeat}.event .script{color:#2b3023;font-weight:600;text-shadow:0 1px 2px rgba(255,255,248,.45)}.event h3{color:#20251c;font-weight:600;text-shadow:0 1px 2px rgba(255,255,248,.5)}
+.hero:not(.hero-motion){background:linear-gradient(rgba(248,246,237,.28),rgba(240,240,225,.42)),url("assets/reference/paper-plos-p-1.jpg") center/cover no-repeat}
+.couple.warm{background:linear-gradient(rgba(244,242,232,.3),rgba(232,235,215,.44)),url("assets/reference/backgorund-mempelai-min.png") center top/cover no-repeat}
+.gallery{background:linear-gradient(rgba(246,244,235,.3),rgba(233,236,217,.44)),url("assets/reference/background-wedding-gift-jawa-03-1.png") center/cover no-repeat}
+.rsvp.warm{background:linear-gradient(rgba(246,244,235,.36),rgba(231,234,215,.5)),url("assets/reference/background-wishes-jawa-03-1.png") center/cover no-repeat}
+.couple .script,.gallery .script,.rsvp .script{color:#2b3023;font-weight:600;text-shadow:0 1px 2px rgba(255,255,248,.5)}
+.couple h3,.gallery h3,.rsvp h3{color:#20251c;font-weight:600;text-shadow:0 1px 2px rgba(255,255,248,.55)}
+.couple p,.gallery p,.rsvp p,.hero p{color:#30352a;font-weight:500}.hero .eyebrow,.hero .date,.couple .role{color:#414931;font-weight:700}
