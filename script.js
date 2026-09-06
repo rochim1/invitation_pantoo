@@ -5,9 +5,19 @@ const openButton = document.querySelector('#open-invitation');
 const guestName = document.querySelector('#guest-name');
 const musicButton = document.querySelector('#music');
 const song = document.querySelector('#song');
+const motionVideo = document.querySelector('.hero-motion video');
 
 const params = new URLSearchParams(location.search);
 guestName.textContent = params.get('to') || 'Tamu Undangan';
+document.querySelector('#qr-guest-name').textContent = guestName.textContent;
+new QRCode(document.querySelector('#guest-qr'), {
+  text: `CHECK-IN UNDANGAN\nDila & Rochim\nTamu: ${guestName.textContent}\nTanggal: 19 Desember 2026\nLokasi: Masjid Suciati Saliman`,
+  width: 210,
+  height: 210,
+  colorDark: '#343a28',
+  colorLight: '#fffdf7',
+  correctLevel: QRCode.CorrectLevel.H
+});
 
 openButton.addEventListener('click', () => {
   document.body.classList.remove('locked');
@@ -15,6 +25,9 @@ openButton.addEventListener('click', () => {
   content.classList.add('revealed');
   content.setAttribute('aria-hidden', 'false');
   opening.classList.add('cover-closing');
+  document.querySelector('.hero-motion').classList.remove('video-ended');
+  motionVideo.currentTime = 0;
+  motionVideo.play().catch(() => {});
   song.play().then(() => {
     musicButton.classList.add('playing');
     musicButton.textContent = '♪';
@@ -26,6 +39,10 @@ openButton.addEventListener('click', () => {
   }, 500);
 });
 
+motionVideo.addEventListener('ended', () => {
+  document.querySelector('.hero-motion').classList.add('video-ended');
+});
+
 musicButton.addEventListener('click', () => {
   const shouldPlay = !musicButton.classList.contains('playing');
   musicButton.classList.toggle('playing', shouldPlay);
@@ -33,7 +50,7 @@ musicButton.addEventListener('click', () => {
   if (shouldPlay) song.play().catch(() => {}); else song.pause();
 });
 
-const weddingDate = new Date('2026-12-19T07:00:00+07:00').getTime();
+const weddingDate = new Date('2026-12-19T08:00:00+07:00').getTime();
 function tick() {
   const distance = Math.max(0, weddingDate - Date.now());
   const values = {
@@ -54,9 +71,13 @@ const animationPlan = [
   ['.hero .eyebrow', 'zoomIn', 9000, true],
   ['.hero h2', 'zoomIn', 9000, true],
   ['.couple .script, .couple article, .couple .ampersand', 'fadeInDown', 300],
+  ['.story .section-divider, .story .script, .story h3', 'zoomIn', 200],
+  ['.story-copy', 'fadeInUp', 300],
   ['.quote > *', 'fadeInUp', 300],
   ['.event .script, .event h3', 'zoomIn', 200],
   ['.countdown, .event-card', 'fadeInUp', 300],
+  ['.checkin .section-divider, .checkin .script, .checkin h3', 'zoomIn', 200],
+  ['.checkin-intro, .qr-card', 'fadeInUp', 300],
   ['.gallery .script, .gallery h3', 'zoomIn', 200],
   ['.gallery-item', 'fadeInDown', 100],
   ['.rsvp .script, .rsvp h3', 'zoomIn', 200],

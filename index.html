@@ -7,7 +7,7 @@
   <title>Dila & Rochim — Wedding Invitation</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@400;500;600;700&family=Pinyon+Script&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="locked">
@@ -36,7 +36,7 @@
     <div class="content" id="content" aria-hidden="true">
       <section class="hero section hero-motion">
         <div class="arch arch-photo photo-one" role="img" aria-label="Video pembuka pernikahan">
-          <video autoplay muted loop playsinline poster="assets/reference/JAWA-03-FALLBACK.jpg">
+          <video muted playsinline preload="auto" poster="assets/reference/JAWA-03-FALLBACK.jpg">
             <source src="assets/reference/3D-Motion-Jawa-03.mp4" type="video/mp4">
           </video>
         </div>
@@ -65,10 +65,22 @@
         </article>
       </section>
 
+      <section class="story section warm">
+        <img class="section-divider" src="assets/reference/aset-divider-tema-jawa-03.png" alt="" aria-hidden="true">
+        <p class="script">Our Story</p>
+        <h3>Perjalanan Cinta Kami</h3>
+        <div class="story-copy">
+          <p>Jika mencintai adalah sebuah perjalanan, maka takdir menuliskan awal kisah kami dengan begitu indah. Pada Juni 2022, semesta mempertemukan kami di sebuah lembaga pendidikan—tempat mimpi-mimpi dikejar dan, tanpa kami sangka, tempat dua hati mulai saling mengenal. Dari percakapan sederhana, tumbuh rasa yang perlahan kami jaga dengan doa dan kesungguhan.</p>
+          <p>Waktu mengajarkan kami arti sabar, percaya, dan bertumbuh bersama. Setelah melewati berbagai cerita, pada 4 April 2026 kami mengikat janji lamaran di hadapan keluarga tercinta. Hari itu menjadi langkah baru yang membawa kami semakin dekat menuju satu tujuan dan satu ibadah terpanjang.</p>
+          <p>Atas izin dan rida Allah SWT, pada 19 Desember 2026 kami akan melabuhkan hati dalam ikatan suci pernikahan. Merupakan kebahagiaan dan kehormatan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir serta mengiringi awal perjalanan kami dengan doa restu.</p>
+        </div>
+      </section>
+
       <section class="quote section">
         <img class="section-divider" src="assets/reference/aset-divider-tema-jawa-03.png" alt="" aria-hidden="true">
         <div class="line-ornament">✦</div>
-        <p>“Dan di antara tanda-tanda kebesaran-Nya ialah Dia menciptakan pasangan-pasangan untukmu agar kamu merasa tenteram kepadanya.”</p>
+        <p class="arabic" lang="ar" dir="rtl">وَمِنْ اٰيٰتِهٖٓ اَنْ خَلَقَ لَكُمْ مِّنْ اَنْفُسِكُمْ اَزْوَاجًا لِّتَسْكُنُوْٓا اِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَّوَدَّةً وَّرَحْمَةًۗ اِنَّ فِيْ ذٰلِكَ لَاٰيٰتٍ لِّقَوْمٍ يَّتَفَكَّرُوْنَ ۝٢١</p>
+        <p class="translation">“Di antara tanda-tanda (kebesaran)-Nya ialah bahwa Dia menciptakan pasangan-pasangan untukmu dari (jenis) dirimu sendiri agar kamu merasa tenteram kepadanya. Dia menjadikan di antaramu rasa cinta dan kasih sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir.”</p>
         <span>QS. Ar-Rum: 21</span>
       </section>
 
@@ -85,11 +97,23 @@
         <div class="event-card">
           <p class="role">AKAD NIKAH & RESEPSI</p>
           <h4>Sabtu, 19 Desember 2026</h4>
-          <p>Akad Nikah · 07.00 WIB</p>
+          <p>Akad Nikah · 08.00 WIB</p>
           <p>Resepsi · 09.00 WIB</p>
           <hr>
           <p>Masjid Suciati Saliman</p>
           <a class="pill outline" href="https://www.google.com/maps/search/?api=1&amp;query=Masjid+Suciati+Saliman" target="_blank" rel="noreferrer">LIHAT LOKASI</a>
+        </div>
+      </section>
+
+      <section class="checkin section">
+        <img class="section-divider" src="assets/reference/aset-divider-tema-jawa-03.png" alt="" aria-hidden="true">
+        <p class="script">Wedding Check-in</p>
+        <h3>Scan Saat Hadir</h3>
+        <p class="checkin-intro">Tunjukkan QR code ini kepada petugas ketika tiba di lokasi acara.</p>
+        <div class="qr-card">
+          <div id="guest-qr" class="guest-qr" role="img" aria-label="QR code check-in tamu"></div>
+          <p class="qr-guest" id="qr-guest-name">Tamu Undangan</p>
+          <span>19 Desember 2026 · Masjid Suciati Saliman</span>
         </div>
       </section>
 
@@ -120,12 +144,14 @@
         <p>Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Anda berkenan hadir.</p>
         <h3>Dila <span>&</span> Rochim</h3>
         <small>Made with love · 2026</small>
+        <a class="provider" href="https://pantoo.id" target="_blank" rel="noopener noreferrer">Provided by pantoo.id</a>
       </footer>
     </div>
   </main>
 
   <button class="music" id="music" type="button" aria-label="Putar musik">♫</button>
   <audio id="song" src="assets/reference/JALARANING%20TRESNA%20-%20WORO%20ENDAH%20FT%20ILHAM%20PRADANA%20%28KERONCONG%20VERSION%29%20%20HAI%20KERONCONG.mp3" preload="auto" loop></audio>
+  <script src="assets/vendor/qrcode.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
